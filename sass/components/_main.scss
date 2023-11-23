@@ -1,0 +1,55 @@
+  .section-slogan {
+    padding: 200px 0;
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/fon.jpg");
+  }
+
+  .slogan {
+    text-align: center;
+    position: relative;
+  
+    &__text {
+      color: $color-fff;
+      text-align: center;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.36;
+      letter-spacing: 2.64px;
+      text-transform: uppercase;
+      width: 700px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+  }
+  
+  .order {
+    font-style: normal;
+    background-color: $color-link;
+    color: $color-fff;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.96px;
+    padding: 10px 32px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $color-button-hover;
+      outline-width: 0;
+    }
+  }
+  
+ 

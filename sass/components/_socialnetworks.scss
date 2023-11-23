@@ -1,0 +1,38 @@
+.socialnetworks{
+  margin: 0;
+
+
+&__title {
+    color: $color-fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  &__menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $color-fff;
+    background-color: $color-footer-sn;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__list:hover,
+  &__list:focus {
+    background-color: $color-link;
+  }
+}

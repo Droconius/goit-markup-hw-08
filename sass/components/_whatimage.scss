@@ -1,0 +1,47 @@
+.section-whatimage {
+    padding-bottom: 94px;
+    background-color: $color-fff;
+  }
+
+  .whatimage{
+margin: 0;
+
+  
+  &__slogan {
+    color: $color-title;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
+  
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  &__list {
+    position: relative;
+    z-index: auto;
+  }
+  
+  &__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $color-fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+}
