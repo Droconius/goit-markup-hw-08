@@ -1,11 +1,15 @@
 .section-whatimage {
+  display: none;
+
+  @media screen and (min-width: 1600px)  {
+    display:block;
     padding-bottom: 94px;
     background-color: $color-fff;
   }
+}
 
-  .whatimage{
-margin: 0;
-
+.whatimage{
+  margin: 0;
   
   &__slogan {
     color: $color-title;
@@ -18,6 +22,7 @@ margin: 0;
   
   &__menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     justify-content: center;

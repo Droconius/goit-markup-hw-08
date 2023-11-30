@@ -1,11 +1,10 @@
 .header {
-    border-bottom: 1px solid $border-top-color;
-  }
+  border-bottom: 1px solid $border-top-color;
   
-  .header-menu {
+  &__menu {
     background-color: $color-fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-  }
+  } 
+}

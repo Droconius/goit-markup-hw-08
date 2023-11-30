@@ -39,12 +39,6 @@ body {
     display: block;
   }
   
-  .container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-  
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -56,4 +50,22 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+    @media screen and (min-width: 768px)  {   
+    max-width: 768px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
+    
+    @media screen and (min-width: 1600px)  {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
   }

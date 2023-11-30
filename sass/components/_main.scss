@@ -1,16 +1,18 @@
   .section-slogan {
-    padding: 200px 0;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 120px 0;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
       ),
-      url("../images/fon.jpg");
-  }
+    url("../images/fon@1600.jpg");
+}
 
   .slogan {
     text-align: center;
@@ -24,7 +26,7 @@
       line-height: 1.36;
       letter-spacing: 2.64px;
       text-transform: uppercase;
-      width: 700px;
+      max-width: 700px;
       margin: auto;
       margin-bottom: 30px;
     }
@@ -51,5 +53,3 @@
       outline-width: 0;
     }
   }
-  
- 

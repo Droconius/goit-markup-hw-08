@@ -36,3 +36,13 @@
     background-color: $color-link;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .socialnetworks__title {
+  text-align: center;
+  }
+
+  .footer_socialnetworks{
+    padding: 60px 0;
+  }
+}
