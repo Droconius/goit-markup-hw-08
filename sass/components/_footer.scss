@@ -2,6 +2,26 @@
     background-color: $color-slogan;
     padding: 60px 0;
 
+  &__container{
+    width: 100%;
+
+    @media screen and (min-width: 768px)  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 60px;
+    }
+
+    @media screen and (min-width: 1200px)  {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
   &__logoweb {
     display: flex;
     justify-content: center;
@@ -21,6 +41,7 @@
   &__logoweb .footer__logostudio {
     color: $color-fff;
   }
+
 }
 
 

@@ -1,3 +1,20 @@
+.footer_socialnetworks{
+  padding:60px 0;
+  
+  @media screen and (min-width: 767px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 165px;
+  padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
+}
+
 .socialnetworks{
   margin: 0;
 
@@ -11,6 +28,10 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   
   &__menu {
@@ -37,12 +58,3 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .socialnetworks__title {
-  text-align: center;
-  }
-
-  .footer_socialnetworks{
-    padding: 60px 0;
-  }
-}
