@@ -50,7 +50,40 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
-    </div>
+
+      <!-- Mobile menu -->
+      <div class="mobilemenu">
+        <button class="mobilemenu__open js-open-menu">
+          <svg class="mobilemenu__opensvg">
+            <use href="./images/symbol-defs.svg#evenodd"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobilemenu__conteiner js-menu-container" id="mobile-menu">
+        <button class="mobilemenu__close js-close-menu">
+          <svg class="mobilemenu__closesvg">
+            <use href="./images/symbol-defs.svg#close"></use>
+          </svg>
+        </button>
+        <p>
+          Numquam vitae incidunt ab fugit esse dolor quidem quibusdam iusto
+          suscipit aliquid dolore nihil, rem labore quisquam molestias cumque
+          temporibus dolorem inventore veritatis optio error tempora similique
+          officiis. Quos officia numquam ab, impedit veritatis ut obcaecati
+          fugit natus ipsam vel repellendus ratione! Vel iusto a doloribus
+          tempora sapiente! Ducimus vero, maxime animi modi nostrum, obcaecati
+          quo error cupiditate eos veritatis odio, nulla dolores est molestiae
+          atque dicta ex dolore ab dolor iste nam beatae. Eos harum tenetur
+          doloribus impedit ea ad
+        </p>
+      </div>
+
+
+    
+
+
+
+
 
   </header>
 
@@ -185,17 +218,32 @@
         <h2 class="whatimage__slogan" id="portfolio">Чим ми займаємося</h2>
         <ul class="whatimage__menu">
           <li class="whatimage__list">
-            <img src=" ./images/what1.jpg" alt="Комп'ютер" width="370" class="whatimage__image">
+            <img src="./images/whatimage/desktop@1x.jpg" 
+            srcset="./images/whatimage/desktop@1x.jpg 1x,
+                    ./images/whatimage/desktop@2x.jpg 2x,
+                    ./images/whatimage/desktop@3x.jpg 3x,"
+            alt="Десктопні додатки" 
+            class="whatimage__image">
             <p class="whatimage__text">Десктопні додатки</p>
           </li>
 
           <li class="whatimage__list">
-            <img src="./images/what2.jpg" alt="Телефон" width="370" class="whatimage__image">
+            <img src="./images/whatimage/mobile@1x.jpg" 
+            srcset="./images/whatimage/mobile@1x.jpg 1x,
+                    ./images/whatimage/mobile@2x.jpg 2x,
+                    ./images/whatimage/mobile@3x.jpg 3x"
+            alt="Мобільні додатки" 
+            class="whatimage__image">
             <p class="whatimage__text">Мобільні додатки</p>
           </li>
 
           <li class="whatimage__list">
-            <img src=" ./images/what3.jpg" alt="Планшет" width="370" class="whatimage__image">
+            <img src="./images/whatimage/design@1x.jpg" 
+            srcset="./images/whatimage/design@1x.jpg 1x,
+                    ./images/whatimage/design@2x.jpg 2x,
+                    ./images/whatimage/design@3x.jpg 3x"
+            alt="Дизайнерські рішення"
+            class="whatimage__image">
             <p class="whatimage__text">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -209,7 +257,20 @@
         <h2 class="ourteam__title" id="about">Наша команда</h2>
         <ul class="ourteam__list">
           <li class="ourteam__card">
-            <img src="./images/dem.jpg" alt="Ігор Дем'яненко" class="ourteam__img">
+            <picture>
+              <source srcset="./images/ourteam/demyanenko270@1x.jpg 1x, 
+                              ./images/ourteam/demyanenko270@2x.jpg 2x, 
+                              ./images/ourteam/demyanenko270@3x.jpg 3x," 
+                              media="(min-width: 1200px)" >
+              <source srcset="./images/ourteam/demyanenko354@1x.jpg 1x, 
+                              ./images/ourteam/demyanenko354@2x.jpg 2x, 
+                              ./images/ourteam/demyanenko354@3x.jpg 3x," 
+                              media="(min-width: 768px)" >
+              <source srcset="./images/ourteam/demyanenko450@1x.jpg 1x, 
+                              ./images/ourteam/demyanenko450@2x.jpg 2x, 
+                              ./images/ourteam/demyanenko450@3x.jpg 3x,"  >
+              <img src="./images/ourteam/demyanenko270@1x.jpg" alt="Ігор Дем'яненко" class="ourteam__img">
+            </picture>
             <div class="ourteam__text">
               <h3 class="ourteam__name">Ігор Дем'яненко</h3>
               <p class="ourteam__profession">Product Designer</p>
@@ -247,7 +308,20 @@
           </li>
 
           <li class="ourteam__card">
-            <img src="./images/repina.jpg" alt="Ольга Рєпіна" class="ourteam__img">
+            <picture>
+              <source srcset="./images/ourteam/repina270@1x.jpg 1x, 
+                              ./images/ourteam/repina270@2x.jpg 2x, 
+                              ./images/ourteam/repina270@3x.jpg 3x," 
+                              media="(min-width: 1200px)" >
+              <source srcset="./images/ourteam/repina354@1x.jpg 1x, 
+                              ./images/ourteam/repina354@2x.jpg 2x, 
+                              ./images/ourteam/repina354@3x.jpg 3x," 
+                              media="(min-width: 768px)" >
+              <source srcset="./images/ourteam/repina450@1x.jpg 1x, 
+                              ./images/ourteam/repina450@2x.jpg 2x, 
+                              ./images/ourteam/repina450@3x.jpg 3x,"  >
+              <img src="./images/ourteam/repina270@1x.jpg" alt="Ольга Рєпіна" class="ourteam__img">
+            </picture>
             <div class="ourteam__text">
               <h3 class="ourteam__name">Ольга Рєпіна</h3>
               <p class="ourteam__profession">Frontend Developer</p>
@@ -285,7 +359,20 @@
           </li>
 
           <li class="ourteam__card">
-            <img src="./images/tarasov.jpg" alt="Микола Тарасов" class="ourteam__img">
+            <picture>
+              <source srcset="./images/ourteam/tarasov270@1x.jpg 1x, 
+                              ./images/ourteam/tarasov270@2x.jpg 2x, 
+                              ./images/ourteam/tarasov270@3x.jpg 3x," 
+                              media="(min-width: 1200px)" >
+              <source srcset="./images/ourteam/tarasov354@1x.jpg 1x, 
+                              ./images/ourteam/tarasov354@2x.jpg 2x, 
+                              ./images/ourteam/tarasov354@3x.jpg 3x," 
+                              media="(min-width: 768px)" >
+              <source srcset="./images/ourteam/tarasov450@1x.jpg 1x, 
+                              ./images/ourteam/tarasov450@2x.jpg 2x, 
+                              ./images/ourteam/tarasov450@3x.jpg 3x,"  >
+              <img src="./images/ourteam/tarasov270@1x.jpg" alt="Микола Тарасов" class="ourteam__img">
+            </picture>
             <div class="ourteam__text">
               <h3 class="ourteam__name">Микола Тарасов</h3>
               <p class="ourteam__profession">Marketing</p>
@@ -323,7 +410,20 @@
           </li>
 
           <li class="ourteam__card">
-            <img src="./images/ermakov.jpg" alt="Михайло Єрмаков" class="ourteam__img">
+            <picture>
+              <source srcset="./images/ourteam/ermakov270@1x.jpg 1x, 
+                              ./images/ourteam/ermakov270@2x.jpg 2x, 
+                              ./images/ourteam/ermakov270@3x.jpg 3x," 
+                              media="(min-width: 1200px)" >
+              <source srcset="./images/ourteam/ermakov354@1x.jpg 1x, 
+                              ./images/ourteam/ermakov354@2x.jpg 2x, 
+                              ./images/ourteam/ermakov354@3x.jpg 3x," 
+                              media="(min-width: 768px)" >
+              <source srcset="./images/ourteam/ermakov450@1x.jpg 1x, 
+                              ./images/ourteam/ermakov450@2x.jpg 2x, 
+                              ./images/ourteam/ermakov450@3x.jpg 3x,"  >
+              <img src="./images/ourteam/ermakov270@1x.jpg" alt="Михайло Єрмаков" class="ourteam__img">
+            </picture>
             <div class="ourteam__text">
               <h3 class="ourteam__name">Михайло Єрмаков</h3>
               <p class="ourteam__profession">UI Designer</p>
@@ -494,6 +594,9 @@
 
   <!-- Script modal windows -->
   <script src="./js/modal.js"></script>
+
+  <!-- Script mobile nenu -->
+  <script src="./js/mobile-menu.js"></script>
 
 </body>
 

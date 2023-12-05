@@ -1,5 +1,6 @@
 .header {
   border-bottom: 1px solid $border-top-color;
+  position: relative;
   
   &__menu {
     background-color: $color-fff;
