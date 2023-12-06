@@ -53,38 +53,41 @@
 
       <!-- Mobile menu -->
       <div class="mobilemenu">
-        <button class="mobilemenu__open js-open-menu">
+        <button class="mobilemenu__open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="mobilemenu__opensvg">
             <use href="./images/symbol-defs.svg#evenodd"></use>
           </svg>
         </button>
       </div>
-      <div class="mobilemenu__conteiner js-menu-container" id="mobile-menu">
+
+      <div class="mobilemenu__conteiner js-menu-container " id="mobile-menu">
         <button class="mobilemenu__close js-close-menu">
           <svg class="mobilemenu__closesvg">
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
         </button>
-        <p>
-          Numquam vitae incidunt ab fugit esse dolor quidem quibusdam iusto
-          suscipit aliquid dolore nihil, rem labore quisquam molestias cumque
-          temporibus dolorem inventore veritatis optio error tempora similique
-          officiis. Quos officia numquam ab, impedit veritatis ut obcaecati
-          fugit natus ipsam vel repellendus ratione! Vel iusto a doloribus
-          tempora sapiente! Ducimus vero, maxime animi modi nostrum, obcaecati
-          quo error cupiditate eos veritatis odio, nulla dolores est molestiae
-          atque dicta ex dolore ab dolor iste nam beatae. Eos harum tenetur
-          doloribus impedit ea ad
-        </p>
+
+        <ul class="mobilemenu__nav">
+          <li><a href="#about" class="mobilemenu__link-active">Студія</a></li>
+          <li><a href="portfolio.html" class="mobilemenu__link">Портфоліо</a></li>
+          <li><a href="#contacts" class="mobilemenu__link">Контакти</a></li>
+        </ul>
+        
+        <ul>
+          <li><a href="mailto:info@devstudio.com" class="mobilemenu__mailto">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111" class="mobilemenu__tel">+38 096 111 11 11</a></li>
+          <ul class="mobilemenu__snmenu">
+            <li><a href="#" class="mobilemenu__snlist">Instagram</a></li>
+            <li class="mobilemenu__snrazd"></li>
+            <li><a href="#" class="mobilemenu__snlist">Twitter</a></li>
+            <li class="mobilemenu__snrazd"></li>
+            <li><a href="#" class="mobilemenu__snlist">Facebook</a></li>
+            <li class="mobilemenu__snrazd"></li>
+            <li><a href="#" class="mobilemenu__snlist">LinkedIn</a></li>
+          </ul>
+        </ul>
+
       </div>
-
-
-    
-
-
-
-
-
   </header>
 
   <!-- Main -->
@@ -573,7 +576,6 @@
           </li>
         </ul>
       </div>
-
 
       <!-- Subscribe forms -->
       <div class="footer__subscribe">
