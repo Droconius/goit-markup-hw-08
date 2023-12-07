@@ -8,6 +8,7 @@
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    document.body.classList.toggle("modal-open");
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -20,4 +21,6 @@
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
   });
+
+
 })();
