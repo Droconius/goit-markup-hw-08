@@ -1,5 +1,6 @@
 .footer_socialnetworks{
   padding:60px 0;
+  text-align: center;
   
   @media screen and (min-width: 767px) {
   display: flex;
@@ -12,6 +13,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: 0;
+    align-items: baseline;
   }
 }
 
@@ -21,17 +23,11 @@
 
 &__title {
     color: $color-fff;
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
-
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
   }
   
   &__menu {

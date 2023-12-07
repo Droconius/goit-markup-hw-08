@@ -37,6 +37,7 @@
         justify-content: center;
         width: 40px;
         height: 40px;
+        color: $color-000;
         border: 1px solid $color-fff;
         background-color: $color-fff;
         cursor: pointer;
@@ -46,13 +47,14 @@
     &__opensvg {
         width: 40px;
         height: 40px;
-        fill: $color-000;
+        fill: currentColor;
     }
       
     &__open:hover,
     &__open:focus {
-        border-color: $color-link;
-        outline-width: 0;
+      color: $color-link;
+      border-color: $color-link;
+      outline-width: 0;
     }
     
     &__close {

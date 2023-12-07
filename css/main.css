@@ -175,12 +175,7 @@ img {
         flex-wrap: wrap;
     gap: 10px;
     padding: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -286,6 +281,7 @@ img {
           justify-content: center;
   width: 40px;
   height: 40px;
+  color: #000;
   border: 1px solid #fff;
   background-color: #fff;
   cursor: pointer;
@@ -295,9 +291,10 @@ img {
 .mobilemenu__opensvg {
   width: 40px;
   height: 40px;
-  fill: #000;
+  fill: currentColor;
 }
 .mobilemenu__open:hover, .mobilemenu__open:focus {
+  color: #2196f3;
   border-color: #2196f3;
   outline-width: 0;
 }
@@ -398,7 +395,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 120px 0;
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon@480.jpg");
@@ -415,7 +411,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .section-slogan {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon@768.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon@768.jpg");
   }
@@ -428,7 +423,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .section-slogan {
-    max-width: 1200px;
+    max-width: 1600px;
+    padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon@1600.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon@1600.jpg");
   }
@@ -1236,6 +1232,9 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio__card {
     max-width: 354px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1315,6 +1314,9 @@ img {
 }
 .footer__container {
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -1352,6 +1354,25 @@ img {
             justify-content: space-between;
   }
 }
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 .footer__logoweb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1383,7 +1404,7 @@ img {
   margin-top: 28px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .contacts__menu {
     text-align: left;
   }
@@ -1420,6 +1441,7 @@ img {
 
 .footer_socialnetworks {
   padding: 60px 0;
+  text-align: center;
 }
 @media screen and (min-width: 767px) {
   .footer_socialnetworks {
@@ -1443,6 +1465,9 @@ img {
 @media screen and (min-width: 1200px) {
   .footer_socialnetworks {
     margin-left: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1451,18 +1476,11 @@ img {
 }
 .socialnetworks__title {
   color: #fff;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-@media screen and (max-width: 767px) {
-  .socialnetworks__title {
-    text-align: center;
-  }
 }
 .socialnetworks__menu {
   display: -webkit-box;

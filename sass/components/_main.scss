@@ -3,7 +3,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 120px 0;
-    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -30,7 +29,6 @@
     }
    
     @media screen and (min-width: 768px)  {
-      max-width: 768px;
       background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -52,7 +50,8 @@
     }
 
     @media screen and (min-width: 1200px)  {
-      max-width: 1200px;
+      max-width: 1600px;
+      padding: 200px 0;
       background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
