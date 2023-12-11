@@ -488,7 +488,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  max-width: 450px;
   height: 610px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,7 +508,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 530px;
+    max-width: 530px;
     height: 580px;
   }
 }
