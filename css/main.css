@@ -285,8 +285,8 @@ img {
   border: 1px solid #fff;
   background-color: #fff;
   cursor: pointer;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobilemenu__opensvg {
   width: 40px;
@@ -295,7 +295,6 @@ img {
 }
 .mobilemenu__open:hover, .mobilemenu__open:focus {
   color: #2196f3;
-  border-color: #2196f3;
   outline-width: 0;
 }
 .mobilemenu__close {
@@ -352,16 +351,26 @@ img {
 .mobilemenu__mailto {
   display: block;
   color: #2196f3;
-  font-size: 34px;
+  font-size: 26px;
   font-weight: 500;
   letter-spacing: 0.68px;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 440px) {
+  .mobilemenu__mailto {
+    font-size: 34px;
+  }
+}
 .mobilemenu__tel {
   color: #757575;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.48px;
+}
+@media screen and (min-width: 440px) {
+  .mobilemenu__tel {
+    font-size: 24px;
+  }
 }
 .mobilemenu__snmenu {
   display: -webkit-box;
@@ -377,17 +386,28 @@ img {
   margin-top: 64px;
 }
 .mobilemenu__snlist {
+  display: block;
   color: #2196f3;
-  font-size: 18px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.36px;
 }
+@media screen and (min-width: 440px) {
+  .mobilemenu__snlist {
+    font-size: 18px;
+  }
+}
 .mobilemenu__snrazd {
   display: block;
   width: 1px;
-  height: 22px;
+  height: 14px;
   background-color: rgba(33, 33, 33, 0.2);
+}
+@media screen and (min-width: 440px) {
+  .mobilemenu__snrazd {
+    height: 22px;
+  }
 }
 
 .section-slogan {
@@ -489,7 +509,7 @@ img {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   max-width: 450px;
-  height: 610px;
+  max-height: 610px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,7 +529,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 530px;
-    height: 580px;
+    max-height: 580px;
   }
 }
 .modal.is-hidden {
@@ -564,10 +584,15 @@ img {
   width: 100%;
   font-weight: 700;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.6px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 340px) {
+  .modal__title {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__title {
@@ -596,6 +621,7 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 40px;
+  width: 100%;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -640,7 +666,7 @@ img {
 }
 .modal__commetsinput {
   display: block;
-  height: 120px;
+  height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
@@ -652,6 +678,11 @@ img {
   letter-spacing: 0.12px;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-height: 620px) {
+  .modal__commetsinput {
+    height: 100px;
+  }
 }
 .modal__commentstext {
   position: absolute;
@@ -1232,9 +1263,6 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio__card {
     max-width: 354px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1271,7 +1299,6 @@ img {
 }
 .portfolio__overlay-text {
   color: #fff;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -1296,6 +1323,15 @@ img {
   font-weight: 400;
   line-height: 1.875;
   letter-spacing: 0.48px;
+}
+.portfolio__text.card1 {
+  display: block;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .portfolio__text.card1 {
+    margin-bottom: 36px;
+  }
 }
 .portfolio__card:hover, .portfolio__card:focus {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);

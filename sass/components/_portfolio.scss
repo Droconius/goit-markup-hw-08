@@ -70,7 +70,6 @@
 
     @media screen and (min-width: 768px)  {   
       max-width: 354px;
-      flex-grow: 1;
     }
       
     @media screen and (min-width: 1200px)  {
@@ -99,7 +98,6 @@
   
   &__overlay-text {
     color: $color-fff;
-    font-family: Roboto;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -128,7 +126,16 @@
     line-height: 1.875;
     letter-spacing: 0.48px;
   }
-  
+
+  &__text.card1 {
+  display: block;
+  margin-bottom: 0px;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {   
+    margin-bottom: 36px;
+  }
+  }
+
   &__card:hover,
   &__card:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
