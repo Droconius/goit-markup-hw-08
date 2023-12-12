@@ -1278,6 +1278,9 @@ img {
   position: relative;
   overflow: hidden;
 }
+.portfolio__picture {
+  width: 100%;
+}
 .portfolio__overlay {
   position: absolute;
   bottom: 0;
