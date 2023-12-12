@@ -351,7 +351,7 @@ img {
 .mobilemenu__mailto {
   display: block;
   color: #2196f3;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
   letter-spacing: 0.68px;
   margin-bottom: 32px;
@@ -363,7 +363,7 @@ img {
 }
 .mobilemenu__tel {
   color: #757575;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.48px;
 }
@@ -388,7 +388,7 @@ img {
 .mobilemenu__snlist {
   display: block;
   color: #2196f3;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.36px;
